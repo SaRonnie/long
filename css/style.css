@@ -35,7 +35,7 @@ p {
 /* ------------------------HEAD------------------------------*/
 
 .wrapper{
-	width:1440px;
+	max-width:1440px;
 	margin: 0 auto;
 	text-align: center;
 	
@@ -76,7 +76,7 @@ p {
 .page-header .logo:hover{opacity: 0.7;}
 .main-navigation {
 	float:right;
-	margin: 55px 176px 130px;
+	margin: 55px 176px 130px 0;
 	}
 	
 .main-navigation li{float:left;}
@@ -169,8 +169,7 @@ font: 16px Titillium Web, sans-serif;
 .our-team h3{ color: #3c4761;}
 
 .our-team  ul.employees {
-	display:table-cell;
-	padding:0 150px;
+	display:inline-block;
 	}
 
 .our-team  .employees li{
@@ -378,39 +377,45 @@ overflow:hidden;
 
 .about-us {
 	height: 100%;
-	background-color: #d74680; 
-		}
+	background-color: #d74680;
+	}
+			
 .about-us h3{color:white;} 
 		
 .about-us ul{
-	padding: 0 150px 100px;
-	display:table-cell;
+	display: inline-block;
+	padding: 0 0 100px 0;
+    }
+	
+.about-us .wrapper {
+	max-width: 1100px;
 	}
-	
-	
+		
 .about-us li{
 	float:left;
-	padding:0px 0 0 20px;
+	padding:0px 0 0 10px;
+	}
 	
-}	
 .about-us li:nth-child(2n){
-padding:0px 0 0 40px;
-}	
+	padding:0px 0 0 50px;
+}
+	
 .about-us .line {background-color: #b73c6d;	}	
 
 .box-about-us{
-	width:540px;
+	width:520px;
 	height:200px;
 	display:inline-block;
 	padding-top: 50px;
 	}
+	
 .comments {
 	font: italic 21px Titillium Web, sans-serif;
 	color: white;
-	padding: 0px 26px 0 145px;
+	padding: 0px 0px 0 145px;
 	text-align:left; 
 }
-	
+
 	
 .photo-commentauthor {
 	width:96px;
